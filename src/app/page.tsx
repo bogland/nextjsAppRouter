@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import ClientComponent from "./Component/ClientComponent";
 
 async function getTestData() {
-  const res = await fetch('http://localhost:3000/api/test', { next: { revalidate: 1 } });
+  const res = await fetch('http://localhost:3000/api/test');
   // The return value is *not* serialized
   // You can return Date, Map, Set, etc.
 
